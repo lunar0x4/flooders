@@ -8,3 +8,6 @@ Floods games like Quizizz with bots.
 ### Quizizz
 <img width="1918" height="840" alt="image" src="https://github.com/user-attachments/assets/cd462f41-ba5c-4036-a52d-ed9707cac4aa" />
 <img width="1897" height="798" alt="image" src="https://github.com/user-attachments/assets/af316ed5-5f72-4c7a-92df-f367e6984953" />
+
+### Blooket
+<img width="1851" height="875" alt="image" src="https://github.com/user-attachments/assets/db799bb0-0a0a-40d1-9e0e-621ff7b5acc5" />
