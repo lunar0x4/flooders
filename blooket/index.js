@@ -25,7 +25,42 @@ async function getCookiesFromBlooket(gameId) {
     const browser = await puppeteer.launch({ 
         headless: true,
         pipe: true,
-        args: ['--no-sandbox', '--disable-setuid-sandbox']
+        args: [
+            '--no-sandbox', 
+            '--disable-setuid-sandbox',
+            '--disable-dev-shm-usage',
+            '--disable-accelerated-2d-canvas',
+            '--disable-gpu',
+            '--disable-web-security',
+            '--disable-features=VizDisplayCompositor',
+            '--disable-background-timer-throttling',
+            '--disable-backgrounding-occluded-windows',
+            '--disable-renderer-backgrounding',
+            '--disable-features=TranslateUI',
+            '--disable-ipc-flooding-protection',
+            '--disable-features=HttpsUpgrades',
+            '--disable-sync',
+            '--disable-default-apps',
+            '--disable-extensions',
+            '--disable-component-extensions-with-background-pages',
+            '--disable-domain-reliability',
+            '--disable-client-side-phishing-detection',
+            '--disable-crash-reporter',
+            '--disable-breakpad',
+            '--disable-component-update',
+            '--disable-logging',
+            '--disable-bundled-ppapi-flash',
+            '--disable-print-preview',
+            '--disable-notifications',
+            '--no-default-browser-check',
+            '--no-first-run',
+            '--no-pings',
+            '--no-experiments',
+            '--no-zygote',
+            '--single-process',
+            '--memory-pressure-off',
+            '--max_old_space_size=256'
+        ]
     });
     const page = await browser.newPage();
     
