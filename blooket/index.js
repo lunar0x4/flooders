@@ -173,7 +173,7 @@ async function main() {
                     if (bot) {
                         bots.push(bot);
                     }
-                    await delay(50);
+                    await delay(50); // change to what u want, lower = better, 1000 = 1 second
                 }
                     
                 console.log(`\n[✓] ${bots.length}/${count} bots successfully joined!`);
