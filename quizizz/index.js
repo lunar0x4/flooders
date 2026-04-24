@@ -43,12 +43,14 @@ const rl = readline.createInterface({
 function generateRandomName() {
     const firstNames = ["Hugh", "Mike", "Ben", "Phil", "Barry", "Harry", "Jack", "Joe", "Tim", "Tom", "Dick", "Bob", "Bill", "Will", "John", "Jim", "Dan", "Sam", "Max", "Leo", "Ima", "Seymour", "Mike", "Lou", "Drew", "Justin", "Chris", "Pat", "Les", "Ray", "Lynn", "Gene", "Lee", "Kelly", "Morgan", "Casey", "Riley", "Cameron", "Jessie", "Jackie"];
     const lastNames = ["Jass", "Hunt", "Dee", "Butter", "Weener", "Small", "Long", "Johnson", "Wang", "Davis", "Brown", "Wilson", "Moore", "Taylor", "Anderson", "Cox", "Dick", "Fitz", "Hertz", "Koch", "Kuntz", "Lust", "Peacock", "Popp", "Putz", "Semenov", "Shuffler", "Staines", "Wax", "Weiner", "Willetts"];
-
+/*
     const randomLetters = Array.from({ length: 4 }, () =>
         String.fromCharCode(97 + Math.floor(Math.random() * 26))
     ).join("");
 
     return `${firstNames[Math.floor(Math.random() * firstNames.length)]} ${lastNames[Math.floor(Math.random() * lastNames.length)]}${randomLetters}`;
+*/
+    return `${firstNames[Math.floor(Math.random() * firstNames.length)]} ${lastNames[Math.floor(Math.random() * lastNames.length)]}`;
 }
 
 function generateRandomUID() {
